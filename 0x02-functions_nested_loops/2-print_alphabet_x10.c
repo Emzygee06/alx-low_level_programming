@@ -1,14 +1,18 @@
 #include "main.h"
-#include <stdio.h>
 
 /**
- * add -prints add two numbers
- *@i: print int i
- *@k: print int k
- * Return: Always 0.
- */
+ * print_alphabet_x10 - print 10 times the alphabet in lower case
+*/
 
-int add(int i, int k)
+void print_alphabet_x10(void)
 {
-return (i + k);
+	int count = 0;
+	char i;
+
+	while (count++ <= 9)
+	{
+	for (i = 'a'; i <= 'z'; i++)
+		_putchar(i);
+	_putchar('\n');
+	}
 }
