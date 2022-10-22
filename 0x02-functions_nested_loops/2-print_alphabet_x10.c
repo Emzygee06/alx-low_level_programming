@@ -1,18 +1,22 @@
 #include "main.h"
 
 /**
- * print_alphabet_x10 - print 10 times the alphabet in lower case
+ * print_alphabet_x10 - Prints alohabet 10 times
+ *
+ * Return: 0 success
 */
 
 void print_alphabet_x10(void)
 {
-	int count = 0;
-	char i;
+	int alphabet;
+	int i;
 
-	while (count++ <= 9)
+	for (i = 0; i < 10; i++)
 	{
-	for (i = 'a'; i <= 'z'; i++)
-		_putchar(i);
-	_putchar('\n');
+		for (alphabet = 'a'; alphabet <= 'z'; alphabet++)
+		{
+		_putchar(alphabet);
+		}
+		_putchar('\n');
 	}
 }
